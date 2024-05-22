@@ -3,15 +3,25 @@
 
 <head>
     <title>Book List</title>
+    <style>
+        #root {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            transform: translate(0, -60%);
+        }
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+        integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+        crossorigin="anonymous" />
 </head>
 
 <body>
     <div id="root">
-        <div class="container">
-            <h1 class="">Books</h1>
-            <div class="row book-container">
+        <div class="ui container">
+            <h1 class="ui header">Books</h1>
+            <div class="ui four cards book-container">
             </div>
         </div>
     </div>
